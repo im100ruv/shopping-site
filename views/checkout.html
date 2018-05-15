@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/checkout.css">
+  <title>Shop Online</title>
+</head>
+
+<body>
+  <main class="product-list grid">
+    <header class="header grid">
+      <div class="hamburger">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </div>
+      <div>
+        <strong>
+          <div>
+            <strong>
+              <a href="../index.html">Shop</a>
+            </strong>
+          </div>
+        </strong>
+      </div>
+      <div class="cart">
+        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+      </div>
+    </header>
+
+    <section class="navbar">
+      <ul>
+        <li class="active">
+          <a href="views/productListing.html">Men's Outerwear</a>
+        </li>
+        <li>
+          <a href="views/productListing.html">Ladies Outerwear</a>
+        </li>
+        <li>
+          <a href="views/productListing.html">Men's T-Shirts</a>
+        </li>
+        <li>
+          <a href="views/productListing.html">Ladies T-Shirts</a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Product Detail -->
+    <section class="category checkout-detail">
+      <div class="checkout-title">
+        Checkout
+        <p>Shop is a demo app. Form-data will not be sent.</p>
+      </div>
+      <form action="#" method="">
+        <div class="checkout-form">
+          <!-- <div class="checkout-item-desc">
+                <div class="qty">
+                  <div class="measure">
+                    <div class="label">Qty</div>
+                    <div class="right">
+                      <select name="size" id="size">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <a href="../index.html" class="btn">PLACE ORDER</a>
+              </div> -->
+
+          <div class="form-section-1">
+            <strong>Account Information</strong>
+            <input type="email" placeholder="Email">
+            <input type="number" placeholder="Phone Number">
+            <strong>Shipping Address</strong>
+            <input type="text" placeholder="Address">
+            <input type="text" placeholder="City">
+            <input type="text" placeholder="State/Province">
+            <input type="number" placeholder="Zip/Postal Code">
+            <label for="country">Country</label>
+            <select name="country" id="country">
+              <option value="India">India</option>
+              <option value="Nepal">Nepal</option>
+              <option value="Bangladesh">Bangladesh</option>
+              <option value="Sri Lanka">Sri Lanka</option>
+            </select>
+            <strong>Billing Address</strong>
+            <input type="checkbox"> Use different billing address
+          </div>
+          <div class="form-section-2">
+            <strong>Payment Method</strong>
+            <input type="text" placeholder="Cardholder Name">
+            <input type="text" placeholder="Card Number">
+            <label for="expiry">Expiry</label>
+            <select name="expiry" id="expiry-month">
+              <option value="Jan">Jan</option>
+              <option value="Feb">Feb</option>
+              <option value="Mar">Mar</option>
+              <option value="Apr">Apr</option>
+            </select>
+            <select name="expiry" id="expiry-year">
+              <option value="2019">2019</option>
+              <option value="2020">2020</option>
+              <option value="2021">2021</option>
+              <option value="2022">2022</option>
+            </select>
+            <input type="number" placeholder="CVV">
+            <strong>Order Summary</strong>
+            <div class="order-summary">
+              <div class="item-name">Full-zip Hoodie</div>
+              <div class="item-price">$22.45</div>
+              <div class="item-name">Black Shirt</div>
+              <div class="item-price">$20.10</div>
+              <div class="item-name">Full-sleeve T-Shirts</div>
+              <div class="item-price">$15</div>
+              <div class="item-name">--------------------------------</div>
+              <div class="item-price">------------</div>
+              <div class="item-name">Total</div>
+              <div class="item-price">$115.67</div>
+            </div>
+            <a href="../index.html" class="btn">PLACE ORDER</a>
+          </div>
+
+        </div>
+      </form>
+
+
+      <!-- <div class="total">
+        <strong>Total: &nbsp;
+          <span> $110.45 </span>
+        </strong>
+        <a href="../index.html" class="btn">PLACE ORDER</a>
+      </div> -->
+    </section>
+
+    <footer class="footer">
+      <div class="footer-large">
+        <p> Made by Saurabh </p>
+        <a href="#" class="btn">DEMO ONLY</a>
+      </div>
+    </footer>
+
+  </main>
+
+  <section class="mobile-footer">
+    <a href="../index.html">
+      <div> PLACE ORDER </div>
+    </a>
+  </section>
+</body>
+
+</html>
