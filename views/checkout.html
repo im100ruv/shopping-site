@@ -8,6 +8,7 @@
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="../css/checkout.css">
+  <link rel="stylesheet" href="../css/material.css">
   <title>Shop Online</title>
 </head>
 
@@ -56,60 +57,98 @@
       </div>
       <form action="#" method="">
         <div class="checkout-form">
-          <!-- <div class="checkout-item-desc">
-                <div class="qty">
-                  <div class="measure">
-                    <div class="label">Qty</div>
-                    <div class="right">
-                      <select name="size" id="size">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
-                <a href="../index.html" class="btn">PLACE ORDER</a>
-              </div> -->
-
           <div class="form-section-1">
+
             <strong>Account Information</strong>
-            <input type="email" placeholder="Email">
-            <input type="number" placeholder="Phone Number">
+            <div class="input-group">
+              <input type="email" class="form-control" required>
+              <label>Email</label>
+            </div>
+            <div class="input-group">
+              <input type="number" class="form-control" required>
+              <label>Phone Number</label>
+            </div>
+
             <strong>Shipping Address</strong>
-            <input type="text" placeholder="Address">
-            <input type="text" placeholder="City">
-            <input type="text" placeholder="State/Province">
-            <input type="number" placeholder="Zip/Postal Code">
-            <label for="country">Country</label>
-            <select name="country" id="country">
-              <option value="India">India</option>
-              <option value="Nepal">Nepal</option>
-              <option value="Bangladesh">Bangladesh</option>
-              <option value="Sri Lanka">Sri Lanka</option>
-            </select>
+            <div class="input-group">
+              <input type="text" class="form-control" required>
+              <label>Address</label>
+            </div>
+            <div class="input-group">
+              <input type="text" class="form-control" required>
+              <label>City</label>
+            </div>
+
+            <div class="address-line">
+              <div class="input-group">
+                <input type="text" class="form-control" required>
+                <label>State/Province</label>
+              </div>
+              <div class="input-group">
+                <input type="text" class="form-control" required>
+                <label>Zip/Postal Code</label>
+              </div>
+            </div>
+
+            <div class="input-group">
+              <label>Country</label>
+              <select name="country" id="country" class="form-control">
+                <option value="India">India</option>
+                <option value="Nepal">Nepal</option>
+                <option value="Bangladesh">Bangladesh</option>
+                <option value="Sri Lanka">Sri Lanka</option>
+              </select>
+            </div>
+
             <strong>Billing Address</strong>
-            <input type="checkbox"> Use different billing address
+            <div class="input-group">
+              <input type="checkbox" class="" required>
+              <label>Use different billing address</label>
+            </div>
           </div>
+
+          <!-- second column -->
           <div class="form-section-2">
+
             <strong>Payment Method</strong>
-            <input type="text" placeholder="Cardholder Name">
-            <input type="text" placeholder="Card Number">
-            <label for="expiry">Expiry</label>
-            <select name="expiry" id="expiry-month">
-              <option value="Jan">Jan</option>
-              <option value="Feb">Feb</option>
-              <option value="Mar">Mar</option>
-              <option value="Apr">Apr</option>
-            </select>
-            <select name="expiry" id="expiry-year">
-              <option value="2019">2019</option>
-              <option value="2020">2020</option>
-              <option value="2021">2021</option>
-              <option value="2022">2022</option>
-            </select>
-            <input type="number" placeholder="CVV">
+            <div class="input-group">
+              <input type="text" class="form-control" required>
+              <label>Cardholder Name</label>
+            </div>
+            <div class="input-group">
+              <input type="text" class="form-control" required>
+              <label>Card Number</label>
+            </div>
+
+            <div class="input-group">
+              <label>Expiry</label>
+              <div class="credit-card-line">
+                <div class="input-group">
+                  <select name="expiry" id="expiry-month" class="form-control">
+                    <option value="Jan">Jan</option>
+                    <option value="Feb">Feb</option>
+                    <option value="Mar">Mar</option>
+                    <option value="Apr">Apr</option>
+                  </select>
+                </div>
+
+                <div class="input-group">
+                  <select name="expiry" id="expiry-year" class="form-control">
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                  </select>
+                </div>
+
+                <div class="input-group">
+                  <input type="number" class="form-control" required>
+                  <label>CVV</label>
+                </div>
+              </div>
+            </div>
+
+
             <strong>Order Summary</strong>
             <div class="order-summary">
               <div class="item-name">Full-zip Hoodie</div>
@@ -128,14 +167,6 @@
 
         </div>
       </form>
-
-
-      <!-- <div class="total">
-        <strong>Total: &nbsp;
-          <span> $110.45 </span>
-        </strong>
-        <a href="../index.html" class="btn">PLACE ORDER</a>
-      </div> -->
     </section>
 
     <footer class="footer">
