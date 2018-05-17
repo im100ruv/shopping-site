@@ -12,10 +12,23 @@
 </head>
 
 <body>
+  <!-- sidenav -->
+  <div id="mySidenav" class="sidenav">
+    <div id="sidenav-inner" class="sidenav-inner">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="productListing.html">Men's Outerwear</a>
+      <a href="productListing.html">Ladies Outerwear</a>
+      <a href="productListing.html">Men's T-Shirts</a>
+      <a href="productListing.html">Ladies T-Shirts</a>
+    </div>
+    <div class="sidenav-inner-second" onclick="closeNav()"></div>
+  </div>
+
   <main class="product-list grid">
     <header class="header grid">
-      <div class="hamburger">
+      <div class="hamburger" onclick="openNav()">
         <i class="fa fa-bars" aria-hidden="true"></i>
+        <!-- &#9776; can also be used for hamburger icon -->
       </div>
       <div>
         <strong>
@@ -27,23 +40,25 @@
         </strong>
       </div>
       <div class="cart">
-        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+        <a href="cart.html">
+          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+        </a>
       </div>
     </header>
 
     <section class="navbar">
       <ul>
         <li class="active">
-          <a href="views/productListing.html">Men's Outerwear</a>
+          <a href="productListing.html">Men's Outerwear</a>
         </li>
         <li>
-          <a href="views/productListing.html">Ladies Outerwear</a>
+          <a href="productListing.html">Ladies Outerwear</a>
         </li>
         <li>
-          <a href="views/productListing.html">Men's T-Shirts</a>
+          <a href="productListing.html">Men's T-Shirts</a>
         </li>
         <li>
-          <a href="views/productListing.html">Ladies T-Shirts</a>
+          <a href="productListing.html">Ladies T-Shirts</a>
         </li>
       </ul>
     </section>
@@ -146,6 +161,18 @@
     </footer>
 
   </main>
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "100%";
+      document.getElementById("sidenav-inner").style.width = "100%";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("sidenav-inner").style.width = "0";
+    }
+  </script>
 </body>
 
 </html>

@@ -43,6 +43,51 @@ p {
   color: #eaeaea;
 }
 
+/* Side navigation for mobile */
+
+.sidenav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: 0;
+}
+
+.sidenav .sidenav-inner-second {
+  height: 100%;
+  background-color: #000;
+  opacity: 0.5;
+}
+
+.sidenav-inner {
+  height: 100%;
+  width: 0;
+  background-color: #FFF;
+  overflow-x: hidden;
+  transition: 0.4s;
+  padding-top: 60px;
+}
+
+.sidenav-inner a {
+  padding: 1em 0.5em 0 0.5em;
+  text-decoration: none;
+  font-size: 1em;
+  color: #222;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav-inner .closebtn {
+  padding-right: 0;
+  font-size: 2.5em;
+  margin-left: 35%;
+}
+
 /* Grid styles for page */
 
 .grid {
